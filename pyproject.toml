@@ -1,0 +1,14 @@
+[project]
+name = "saminanoftir"
+version = "0.1.0"
+description = "Find peaks in FTIR and spectroscopy data - deterministic, offline toolkit"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26", "scipy>=1.13"]
+
+[project.scripts]
+saminanoftir = "saminanoftir.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
